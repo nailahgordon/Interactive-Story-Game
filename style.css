@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f2efe9;
+    color: #1f1f1f;
+    line-height: 1.6;
+}
+
+.site-header {
+    min-height: 60vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+        url("images/school-sidewalk.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-content {
+    max-width: 850px;
+}
+
+.site-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.site-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.top-nav a:hover {
+    background: white;
+    color: black;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.info-section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.map-box {
+    background: #f7f3ed;
+    border-left: 6px solid #7a4f2b;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.map-box ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.map-box li {
+    margin-bottom: 10px;
+}
+
+.story-section {
+    margin-top: 40px;
+}
+
+.story-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+    min-height: 520px;
+}
+
+.story-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-text {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scene-label {
+    display: inline-block;
+    width: fit-content;
+    background: #7a4f2b;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.story-text h2 {
+    font-size: 2.3rem;
+    margin-bottom: 18px;
+}
+
+.story-text p {
+    font-size: 1.08rem;
+    margin-bottom: 22px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choice-link {
+    display: block;
+    text-decoration: none;
+    color: #1f1f1f;
+    background: #f2efe9;
+    border: 2px solid #d7c9b5;
+    padding: 14px 16px;
+    border-radius: 14px;
+    transition: 0.25s ease;
+    font-weight: bold;
+}
+
+.choice-link:hover {
+    background: #7a4f2b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.restart-button {
+    margin-top: 15px;
+    background: #1f1f1f;
+    color: white;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+.restart-button:hover {
+    background: #7a4f2b;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #1f1f1f;
+    color: white;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .site-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .story-card {
+        grid-template-columns: 1fr;
+    }
+
+    .story-card img {
+        height: 300px;
+    }
+
+    .story-text {
+        padding: 25px;
+    }
+
+    .story-text h2 {
+        font-size: 1.8rem;
+    }
+}
