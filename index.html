@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Wallet on the Sidewalk</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <h1>The Wallet on the Sidewalk</h1>
+            <p>
+                A web-based non-linear story about honesty, pressure, and the choices people make
+                when nobody seems to be watching.
+            </p>
+
+            <nav class="top-nav">
+                <a href="#story" id="homeLink">Start Story</a>
+                <a href="#about">Story Description</a>
+                <a href="#map">Narrative Map</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about" class="info-section">
+            <h2>Story Description</h2>
+
+            <p>
+                This interactive story follows a student walking home from school who finds a wallet
+                on the sidewalk. Inside the wallet is $100, an ID card, and a phone number written on
+                a small piece of paper. The story takes place around a school neighborhood, including
+                the sidewalk, the school hallway, a possible meeting spot, and a police station.
+            </p>
+
+            <p>
+                The user must decide what to do with the wallet. They can call the number, bring the
+                wallet to the police, keep the money, return it later, or pretend they never found it.
+                The story has several endings, including a good ending, a neutral ending, and a bad
+                ending. The purpose of the story is to show how one small decision can lead to different
+                consequences depending on whether the character chooses honesty, fear, or selfishness.
+            </p>
+        </section>
+
+        <section id="map" class="info-section">
+            <h2>Narrative Map</h2>
+
+            <div class="map-box">
+                <p><strong>Start:</strong> You find a wallet on the sidewalk after school.</p>
+
+                <ul>
+                    <li>
+                        <strong>Choice A:</strong> Call the phone number.
+                        <ul>
+                            <li>Meet the owner in a public place → Good Ending</li>
+                            <li>Bring the wallet to the police instead → Good Ending</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Choice B:</strong> Bring the wallet to the police station.
+                        <ul>
+                            <li>Police contact the owner → Good Ending</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Choice C:</strong> Keep the money.
+                        <ul>
+                            <li>Friend asks about the wallet → Return it and apologize → Neutral Ending</li>
+                            <li>Friend asks about the wallet → Pretend you never saw it → Bad Ending</li>
+                            <li>Call the number later after feeling guilty → Neutral Ending</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Choice D:</strong> Take it to the school office.
+                        <ul>
+                            <li>School contacts the owner → Good Ending</li>
+                            <li>Change your mind and keep the money → Bad Ending</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="story" class="story-section">
+            <div class="story-card">
+
+                <img id="sceneImage" src="images/school-sidewalk.jpg" alt="A sidewalk near school">
+
+                <div class="story-text">
+                    <p class="scene-label" id="sceneLabel">Start</p>
+
+                    <h2 id="sceneTitle">Walking Home</h2>
+
+                    <p id="sceneDescription">
+                        You are walking home from school when you notice something dark on the sidewalk.
+                        At first, you think it is just trash, but when you get closer, you realize it is
+                        a wallet.
+                    </p>
+
+                    <div id="choices" class="choices">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Interactive story project by Cheikh Fall.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
